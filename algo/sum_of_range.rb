@@ -3,6 +3,12 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
+sum = 0
+order = [array[0],array[1]].sort
+(order[0]..order[1]).to_a.each do |x|
+  sum += x
+end
+sum
 
 end
 

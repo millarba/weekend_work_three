@@ -4,6 +4,8 @@
 
 def mutation?(base_word, mutation)
 
+  mutation.chars.all? {|letter| base_word.chars.include?(letter)}
+
 end
 
 # Driver code - don't touch anything below this line.
